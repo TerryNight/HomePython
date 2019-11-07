@@ -1,11 +1,7 @@
-from sys import argv
-time, pr = argv
+import sys
+script_name, time = sys.argv
 
-
-def simple_calc():
-    pay = int(input("Введите ставку в час: "))
-    payment = time * pay
-    return payment + pr
-
-
-print(f'Размер заработной платы составил: {simple_calc()}')
+pay = int(input("Введите заработную плату в час: "))
+pr = int(input("Введите размер премии: "))
+payment = (int(time) * pay) + pr
+print(f'Размер заработной платы составил: {payment}')
