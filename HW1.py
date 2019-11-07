@@ -1,6 +1,7 @@
-from sys import argv
-script_name, work_t, pay, pr = argv
-print("Имя скрипта:",script_name)
-print("Выработка в часах", work_t)
-print("Ставка в часах", pay)
-print("Премия", pr)
+def simple_calc():
+    x = float(input('Введите количество отработанных часов : '))
+    y = float(input('Введите суммы оплаты труда за 1 час : '))
+    c = float(input('Укажите размер премии - '))
+    pay = x * y
+    return pay + c
+print(f'Размер заработной платы составил: {simple_calc() }')
